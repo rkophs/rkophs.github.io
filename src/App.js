@@ -64,7 +64,7 @@ class App extends Component {
         <div className="top">
           <p className="App-intro">
             <h1 className="App-title">
-              We're the {type} of {product}.
+              We're the <span className="gen-text">{type}</span> of <span className="gen-text">{product}</span>.
             </h1>
             <button 
               className="gen-button"
