@@ -46,7 +46,7 @@ class App extends Component {
     const companyImg =  company.emoji;
     const productName = product.name;
     const productImg = product.emoji
-    this.setState({type: companyName, companyImg, product: productName, productImg });
+    this.setState({type: companyName, companyImg, product: productName, productImg, displayLogo: false });
   }
 
   handleGenerateLogo = () => {
@@ -78,13 +78,13 @@ class App extends Component {
         <p className="App-intro">
         {displayLogo ?
           <h1 className="App-title">
-            {companyImg}{productImg}
+            {companyImg}{productImg}.io
           </h1>
          : <button 
             className="gen-button"
             onClick={this.handleGenerateLogo}
           >
-            Reveal My Logo
+            Reveal My Domain
           </button>}
         </p>
       : <span /> }
